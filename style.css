@@ -1,11 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 
-*,
+*
 *::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -27,7 +27,7 @@ p {
   font-size: 16px;
   line-height: 1.7;
   color: #fff;
-  margin: 0;
+  margin: 0; 
 }
 
 .section-fluid-main {
@@ -54,9 +54,9 @@ p {
 }
 
 [type="radio"]:checked,
-[type="radio"]:not(:checked) {
-  position: absolute;
-  visibility: hidden;
+[type="radio"]:not(:checked){
+    position: absolute;
+    visibility: hidden;
 }
 
 .color-btn:checked + label,
@@ -83,7 +83,7 @@ p {
   transform: scale(1.1);
 }
 
-label.first-color {
+label.color-1 {
   margin-left: 500px;
   background-image: url("./images/color1.jpg");
 }
@@ -159,6 +159,7 @@ label.color-6 {
   opacity: 1;
   animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
+
 @keyframes shake {
   10%,
   90% {
@@ -191,6 +192,7 @@ label.color-6 {
   transition: all 250ms linear;
   transition-delay: 300ms;
 }
+
 .back-color.chair-2 {
   background-image: linear-gradient(196deg, #4c4c4c, #262626);
   opacity: 0;
@@ -234,6 +236,7 @@ label.color-6 {
   display: block;
   text-align: left;
 }
+
 .title-up {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -245,6 +248,7 @@ label.color-6 {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -254,6 +258,7 @@ h2 {
   margin-top: 0;
   margin-bottom: 10px;
 }
+
 h4 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -263,12 +268,14 @@ h4 {
   margin-top: 0;
   margin-bottom: 30px;
 }
+
 h4 span {
   text-decoration: line-through;
   font-size: 20px;
   opacity: 0.6;
   padding-left: 15px;
 }
+
 h5 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -278,6 +285,7 @@ h5 {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
 .desc-btn:checked + label,
 .desc-btn:not(:checked) + label {
   position: relative;
@@ -294,9 +302,11 @@ h5 {
   margin-right: 25px;
   opacity: 0.5;
 }
+
 .desc-btn:checked + label {
   opacity: 1;
 }
+
 .desc-btn:not(:checked) + label:hover {
   opacity: 0.8;
 }
@@ -310,6 +320,7 @@ h5 {
   pointer-events: none;
   transform: translateY(20px);
 }
+
 .desc-sec.accor-2 {
   position: absolute;
   top: 25px;
@@ -317,21 +328,25 @@ h5 {
   width: 100%;
   z-index: 2;
 }
+
 #desc-1:checked ~ .desc-sec.accor-1 {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
+
 #desc-2:checked ~ .desc-sec.accor-2 {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(0);
 }
+
 .section-inline {
   position: relative;
   display: inline-block;
   margin-right: 20px;
 }
+
 .section-inline p span {
   font-size: 30px;
   line-height: 1.1;
@@ -360,10 +375,12 @@ h5 {
   text-decoration: none;
   margin-top: 50px;
 }
+
 .icon {
   padding-right: 7px;
   font-size: 20px;
 }
+
 .btn:before {
   position: absolute;
   top: 0;
@@ -375,10 +392,12 @@ h5 {
   background-color: #944852;
   transition: background-color 250ms 300ms ease;
 }
+
 .btn:hover {
   box-shadow: 0 12px 35px 0 rgba(16, 39, 112, 0.25);
   background-color: #333;
 }
+
 .for-color-2:checked ~ .info-wrap .btn:before {
   background-color: #1a1a1a;
 }
